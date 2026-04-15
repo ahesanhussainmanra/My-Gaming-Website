@@ -1,78 +1,130 @@
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: white;
+  overflow-x: hidden;
 }
 
-/* Header */
+/* NAVBAR */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background: #020617;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  z-index: 100;
 }
 
 header h1 {
-    color: #38bdf8;
+  color: cyan;
+  font-size: 24px;
+  text-shadow: 0 0 15px cyan;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  position: relative;
 }
 
-nav a:hover {
-    color: #38bdf8;
+/* underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: cyan;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
 }
 
-/* Hero Section */
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  padding: 150px 20px;
+  animation: fadeUp 1.5s ease;
 }
 
 .hero h2 {
-    font-size: 40px;
+  font-size: 55px;
+  text-shadow: 0 0 20px cyan;
 }
 
-/* Cards */
+.hero p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background: linear-gradient(45deg, cyan, blue);
+  color: black;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.hero button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 60px;
 }
 
 .card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.4s;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glowing border effect */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, cyan, purple, blue);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    background: #38bdf8;
-    color: black;
+  transform: translateY(-10px) scale(1.05);
 }
 
-/* Animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-html {
-    scroll-behavior: smooth;
-}
-.card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-}
-header h1 {
-    text-shadow: 0 0 10px #38bdf8;
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
