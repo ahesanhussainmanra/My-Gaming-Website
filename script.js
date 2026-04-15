@@ -1,13 +1,11 @@
-console.log("Ultra Gaming Hub Loaded");
+const cards = document.querySelectorAll(".card");
 
 window.addEventListener("scroll", () => {
-  const cards = document.querySelectorAll(".card");
-
   cards.forEach(card => {
-    const position = card.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
+    const top = card.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 100;
 
-    if (position < screenHeight - 100) {
+    if (top < trigger) {
       card.style.opacity = "1";
       card.style.transform = "translateY(0)";
     }
