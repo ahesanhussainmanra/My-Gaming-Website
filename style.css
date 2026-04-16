@@ -188,6 +188,7 @@ nav a:hover::after {
 
   .hero {
     padding: 100px 20px;
+  min-height: 60vh;
   }
 
   .hero h2 {
@@ -235,7 +236,7 @@ body {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 80px 15px;
+    padding: 70px 15px;
     min-height: auto;
   }
 
