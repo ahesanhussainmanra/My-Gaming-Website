@@ -171,3 +171,52 @@ nav a:hover::after {
   color: white;
   display: block;
 }
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  nav {
+    display: none; /* mobile me menu hide */
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* CARDS FIX */
+  .cards {
+    grid-template-columns: 1fr; /* ek ke niche ek */
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .brand-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+}
