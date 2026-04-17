@@ -7,7 +7,7 @@ particlesJS("particles-js", {
       value: "#00ffff"
     },
     shape: {
-      type: "round"
+      type: "circle"
     },
     opacity: {
       value: 0.5
@@ -30,7 +30,7 @@ particlesJS("particles-js", {
     events: {
       onhover: {
         enable: true,
-        mode: "pulse"
+        mode: "repulse"
       }
     }
   }

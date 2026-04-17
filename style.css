@@ -298,8 +298,8 @@ nav a {
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   padding: 40px;
 }
 
@@ -327,7 +327,7 @@ nav a {
   }
 
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .hero {
@@ -399,4 +399,55 @@ body::before {
   top: 0;
   left: 0;
   background: #020617;
+}
+/* PRODUCT CARDS */
+.product-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  transition: 0.4s;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.price {
+  color: cyan;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 14px;
+  color: gold;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, cyan, blue);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  transform: scale(1.1);
+}
+
+/* HOVER EFFECT */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px cyan;
 }
