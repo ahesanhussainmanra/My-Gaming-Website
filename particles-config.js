@@ -1,7 +1,7 @@
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 80
+      value: 120
     },
     color: {
       value: "#00ffff"
@@ -16,7 +16,7 @@ particlesJS("particles-js", {
       value: 3
     },
     move: {
-      speed: 2
+      speed: 4
     },
     line_linked: {
       enable: true,
