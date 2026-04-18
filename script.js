@@ -1,16 +1,19 @@
-const faders = document.querySelectorAll(".fade");
+const elements = document.querySelectorAll(".card");
 
-window.addEventListener("scroll", () => {
-  faders.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add("show");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
     }
   });
 });
-window.onload = () => {
-  document.getElementById("loader").style.display = "none";
-};
+
+elements.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = "translateY(50px)";
+  observer.observe(el);
+});
 const glow = document.createElement("div");
 glow.style.position = "fixed";
 glow.style.width = "20px";
@@ -26,3 +29,6 @@ document.addEventListener("mousemove", e => {
   glow.style.left = e.clientX + "px";
   glow.style.top = e.clientY + "px";
 });
+window.onload = () => {
+  document.getElementById("loader").style.display = "none";
+};

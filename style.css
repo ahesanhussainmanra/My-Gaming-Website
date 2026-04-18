@@ -476,13 +476,3 @@ html {
   align-items: center;
   z-index: 9999;
 }
-.fade {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: 0.8s;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
