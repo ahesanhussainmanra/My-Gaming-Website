@@ -97,6 +97,8 @@ nav a:hover::after {
   backdrop-filter: blur(20px);
   transition: 0.5s;
   position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* glow border */
@@ -312,6 +314,8 @@ nav a {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
   transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .card:hover {
@@ -408,6 +412,8 @@ body::before {
   text-align: center;
   backdrop-filter: blur(15px);
   transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .product-card img {
@@ -450,4 +456,7 @@ body::before {
 .product-card:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 0 20px cyan;
+}
+html {
+  scroll-behavior: smooth;
 }
