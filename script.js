@@ -17,3 +17,8 @@ elements.forEach(el => {
 window.onload = () => {
   document.getElementById("loader").style.display = "none";
 };
+function scrollToExplore() {
+  document.getElementById("explore").scrollIntoView({
+    behavior: "smooth"
+  });
+}

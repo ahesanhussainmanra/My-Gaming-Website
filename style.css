@@ -476,3 +476,35 @@ html {
   align-items: center;
   z-index: 9999;
 }
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+@media (max-width: 768px) {
+  .logo span {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.logo img {
+  filter: drop-shadow(0 0 8px cyan);
+}
