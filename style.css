@@ -507,4 +507,5 @@ html {
 }
 .logo img {
   filter: drop-shadow(0 0 8px cyan);
+  background: transparent;
 }
