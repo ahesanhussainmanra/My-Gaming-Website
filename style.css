@@ -397,16 +397,7 @@ body::before {
     transform: translate(200px, 100px);
   }
 }
-/* PARTICLE BACKGROUND */
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: #020617;
-}
+
 /* PRODUCT CARDS */
 .product-card {
   background: rgba(255,255,255,0.05);
