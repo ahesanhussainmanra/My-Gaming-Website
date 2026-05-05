@@ -507,3 +507,38 @@ body {
 h1, h2 {
   font-family: 'Orbitron', sans-serif;
 }
+
+/* PAGE BACKGROUNDS */
+.bg-home {
+  background: url('homebackground.avif') no-repeat center/cover;
+}
+
+.bg-guides {
+  background: url('images/guides-bg.jpg') no-repeat center/cover;
+}
+
+.bg-accessories {
+  background: url('images/accessories-bg.jpg') no-repeat center/cover;
+}
+
+.bg-tips {
+  background: url('images/tips-bg.jpg') no-repeat center/cover;
+}
+
+.bg-updates {
+  background: url('images/updates-bg.jpg') no-repeat center/cover;
+}
+
+/* COMMON FIX */
+body {
+  background-attachment: fixed;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* darkness overlay */
+  z-index: -1;
+}
