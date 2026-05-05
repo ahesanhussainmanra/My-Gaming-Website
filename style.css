@@ -510,7 +510,7 @@ h1, h2 {
 
 /* PAGE BACKGROUNDS */
 .bg-home {
-  background: url('homebackground.avif') no-repeat center/cover;
+  background: url('homebackground.jpg') no-repeat center/cover;
 }
 
 .bg-guides {
