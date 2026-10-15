@@ -1,55 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Ultra Gaming Hub</title>
-<link rel="icon" href="Fevicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="My Logo 1.png">
-<link rel="apple-touch-icon" href="My Logo 1.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Premium Fonts -->
- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>UltraGamingHub | Next-Level Gaming</title>
+  <link rel="icon" href="Fevicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="My Logo 1.png">
+  <link rel="apple-touch-icon" href="My Logo 1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="bg-home">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-content">
+      <span class="loader-mark">UGH</span>
+      <span class="loader-label">Loading your gaming hub</span>
+      <span class="loader-track"><span></span></span>
+    </div>
+  </div>
 
-  <div id="loader">Loading...</div>
-  
-  <div id="particles-js"></div>
+  <div id="particles-js" aria-hidden="true"></div>
 
-<header>
-  <div class="logo">
-  <img src="My Logo 1.png" alt="UltraGamingHub">
-  <span>UltraGamingHub</span>
-</div>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
-</header>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="UltraGamingHub home">
+      <img src="My Logo 1.png" alt="">
+      <span>Ultra<span class="logo-accent">Gaming</span>Hub</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="guide.html">Guides</a>
+      <a href="tips.html">Tips &amp; Tricks</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="updates.html">Updates</a>
+    </nav>
+    <a class="header-cta" href="accessories.html">Explore gear <span aria-hidden="true">↗</span></a>
+  </header>
 
-<section class="hero">
-  <h3 class="welcome">WELCOME TO ULTRA GAMING HUB</h3>
-  <h2>Next-Level Gaming Starts Here 🎮</h2>
-  <p>Pro Guides • Tips & Tricks • Accessories • Updates</p>
-  <button onclick="scrollToExplore()">Explore Now</button>
-</section>
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR NEXT LEVEL STARTS HERE</div>
+        <h1>Play smarter.<br><span class="gradient-text">Level up.</span></h1>
+        <p class="hero-description">Your home for gaming guides, practical tips, setup inspiration and gear worth checking out.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" onclick="scrollToExplore()">Explore the hub <span aria-hidden="true">↓</span></button>
+          <a class="button button-secondary" href="guide.html">Browse guides <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <span class="proof-icon">✦</span>
+          <span>Guides, tips and gear — all in one place</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-core">
+          <span class="core-top">ULTRA</span>
+          <span class="core-symbol">U<span>G</span>H</span>
+          <span class="core-bottom">GAMING HUB</span>
+        </div>
+        <div class="floating-chip chip-guides"><span>✦</span> PRO GUIDES</div>
+        <div class="floating-chip chip-gear"><span>⌘</span> GAMING GEAR</div>
+        <div class="visual-grid"></div>
+      </div>
+    </section>
 
-<section class="cards" id="explore">
-  <a href="guide.html" class="card">Guides</a>
-<a href="tips.html" class="card">Tips & Tricks</a>
-<a href="accessories.html" class="card">Accessories</a>
-<a href="updates.html" class="card">Updates</a>
-</section>
-<div class="brand-text">ultragaminghub.com</div>
+    <section class="explore-section section-wrap" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">PICK YOUR NEXT MOVE</p>
+          <h2>Explore the <span class="gradient-text">hub</span></h2>
+          <p class="section-description">Everything you need to make your next gaming session better.</p>
+        </div>
+        <span class="section-count">01 / 04</span>
+      </div>
 
-<!-- floating glow -->
-<div class="glow"></div>
+      <div class="cards category-grid">
+        <a href="guide.html" class="card category-card">
+          <span class="card-icon icon-violet">⌖</span>
+          <span class="card-number">01</span>
+          <h3>Gaming Guides</h3>
+          <p>Strategies, settings and practical walkthroughs to sharpen your play.</p>
+          <span class="card-link">Explore guides <span aria-hidden="true">↗</span></span>
+        </a>
+        <a href="tips.html" class="card category-card">
+          <span class="card-icon icon-cyan">⚡</span>
+          <span class="card-number">02</span>
+          <h3>Tips &amp; Tricks</h3>
+          <p>Useful tweaks and simple techniques you can try in your next match.</p>
+          <span class="card-link">Get better <span aria-hidden="true">↗</span></span>
+        </a>
+        <a href="accessories.html" class="card category-card">
+          <span class="card-icon icon-blue">⌘</span>
+          <span class="card-number">03</span>
+          <h3>Gaming Accessories</h3>
+          <p>Explore PCs, phones, keyboards, mice and audio gear.</p>
+          <span class="card-link">Explore gear <span aria-hidden="true">↗</span></span>
+        </a>
+        <a href="updates.html" class="card category-card">
+          <span class="card-icon icon-pink">◈</span>
+          <span class="card-number">04</span>
+          <h3>Gaming Updates</h3>
+          <p>Keep up with gaming news, changes and things worth knowing.</p>
+          <span class="card-link">See updates <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="bottom-banner section-wrap">
+      <div>
+        <p class="section-kicker">READY WHEN YOU ARE</p>
+        <h2>Build your next-level setup.</h2>
+        <p>Start with the gear categories and find what fits your gaming style.</p>
+      </div>
+      <a class="button button-primary" href="accessories.html">Explore accessories <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">Ultra<span>Gaming</span>Hub</a>
+    <span>Built for players who keep levelling up.</span>
+    <span class="footer-domain">ultragaminghub.com</span>
+  </footer>
+
+  <div class="glow" aria-hidden="true"></div>
+  <script src="script.js"></script>
 </body>
 </html>

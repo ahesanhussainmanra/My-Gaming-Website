@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Guides</title>
-<link rel="icon" type="image/png" href="My Logo 1.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>Gaming Guides | UltraGamingHub</title>
+  <link rel="icon" type="image/png" href="My Logo 1.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="bg-guides">
-  
-  <div id="particles-js"></div>
-
-<header>
-  <h1>UltraGamingHub</h1>
-   <nav>
-    <a href="index.html">Home</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h3 class="welcome">WELCOME TO ULTRA GAMING HUB</h3>
-  <h2>Gaming Guides 🎯</h2>
-  <p>Learn pro strategies and Become a better Gamer</p>
-</section>
-
-<section class="cards">
-  <div class="card">Free Fire Headshot Guide</div>
-  <div class="card">BGMI Sensitivity Settings</div>
-  <div class="card">Best Gaming Setup Guide</div>
-</section>
-
+  <div id="particles-js" aria-hidden="true"></div>
+  <header>
+    <a class="logo" href="index.html" aria-label="UltraGamingHub home">
+      <img src="My Logo 1.png" alt="">
+      <span>Ultra<span class="logo-accent">Gaming</span>Hub</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="guide.html" aria-current="page">Guides</a>
+      <a href="tips.html">Tips &amp; Tricks</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="updates.html">Updates</a>
+    </nav>
+    <a class="header-cta" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="welcome">LEARN • PRACTISE • IMPROVE</p>
+      <h2>Gaming <span class="gradient-text">Guides</span></h2>
+      <p>Learn strategies, explore settings and build better habits for your next match.</p>
+    </section>
+    <section class="section-wrap explore-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">START LEARNING</p>
+          <h2>Choose your guide</h2>
+          <p class="section-description">More detailed guides can be added to these cards as your content grows.</p>
+        </div>
+      </div>
+      <section class="cards">
+        <article class="card category-card"><span class="card-icon icon-violet">◎</span><span class="card-number">01</span><h3>Free Fire Headshot Guide</h3><p>Practice aim, crosshair placement and sensitivity in a way that suits you.</p><span class="card-link">Guide topic</span></article>
+        <article class="card category-card"><span class="card-icon icon-cyan">⌖</span><span class="card-number">02</span><h3>BGMI Sensitivity Settings</h3><p>Learn how to test and adjust controls for your device and play style.</p><span class="card-link">Guide topic</span></article>
+        <article class="card category-card"><span class="card-icon icon-blue">▦</span><span class="card-number">03</span><h3>Best Gaming Setup Guide</h3><p>Plan a comfortable setup around your space, device and budget.</p><span class="card-link">Guide topic</span></article>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="index.html">Ultra<span>Gaming</span>Hub</a><span>Small improvements. Better sessions.</span><span class="footer-domain">ultragaminghub.com</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>

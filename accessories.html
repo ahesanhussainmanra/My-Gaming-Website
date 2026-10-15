@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Accessories</title>
-<link rel="icon" type="image/png" href="My Logo 1.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>Gaming Accessories | UltraGamingHub</title>
+  <link rel="icon" type="image/png" href="My Logo 1.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="bg-accessories">
-  
-  <div id="particles-js"></div>
-
-<header>
-  <h1>UltraGamingHub</h1>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h3 class="welcome">WELCOME TO ULTRA GAMING HUB</h3>
-  <h2>Gaming Accessories 🛒</h2>
-  <p>Select your category</p>
-</section>
-
-<section class="cards">
-  <a href="PC.html" class="card">💻 Gaming PC</a>
-  <a href="phone.html" class="card">📱 Gaming Phones</a>
-<a href="keyboard.html" class="card">⌨️ Gaming Keyboard</a>
-<a href="mouse.html" class="card">🖱️ Gaming Mouse</a>
-<a href="headphone.html" class="card">🎧 Headphones</a>
-</section>
-
+  <div id="particles-js" aria-hidden="true"></div>
+  <header>
+    <a class="logo" href="index.html" aria-label="UltraGamingHub home">
+      <img src="My Logo 1.png" alt="">
+      <span>Ultra<span class="logo-accent">Gaming</span>Hub</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guides</a>
+      <a href="tips.html">Tips &amp; Tricks</a>
+      <a class="active" href="accessories.html" aria-current="page">Accessories</a>
+      <a href="updates.html">Updates</a>
+    </nav>
+    <a class="header-cta" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="welcome">THE GEAR CORNER</p>
+      <h2>Gaming <span class="gradient-text">Accessories</span></h2>
+      <p>Explore gaming gear by category and find the equipment that suits your setup.</p>
+    </section>
+    <section class="section-wrap explore-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">CHOOSE A CATEGORY</p>
+          <h2>Gear up your setup</h2>
+          <p class="section-description">Browse a category to continue.</p>
+        </div>
+      </div>
+      <section class="cards category-grid">
+        <a href="PC.html" class="card category-card"><span class="card-icon icon-violet">▣</span><span class="card-number">01</span><h3>Gaming PC</h3><p>Explore desktop gaming options and setup ideas.</p><span class="card-link">View category ↗</span></a>
+        <a href="phone.html" class="card category-card"><span class="card-icon icon-cyan">▯</span><span class="card-number">02</span><h3>Gaming Phones</h3><p>Browse phones for mobile gaming.</p><span class="card-link">View category ↗</span></a>
+        <a href="keyboard.html" class="card category-card"><span class="card-icon icon-blue">⌨</span><span class="card-number">03</span><h3>Gaming Keyboard</h3><p>Explore keyboards for your gaming desk.</p><span class="card-link">View category ↗</span></a>
+        <a href="mouse.html" class="card category-card"><span class="card-icon icon-pink">⌁</span><span class="card-number">04</span><h3>Gaming Mouse</h3><p>Browse mouse options and control essentials.</p><span class="card-link">View category ↗</span></a>
+        <a href="headphone.html" class="card category-card"><span class="card-icon icon-violet">◖</span><span class="card-number">05</span><h3>Headphones</h3><p>Explore gaming audio and headset categories.</p><span class="card-link">View category ↗</span></a>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="index.html">Ultra<span>Gaming</span>Hub</a><span>Find the gear that fits your game.</span><span class="footer-domain">ultragaminghub.com</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
